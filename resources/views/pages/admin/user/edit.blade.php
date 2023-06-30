@@ -37,7 +37,7 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="form-group">
-                      <label>Edit Nama User</label>
+                      <label>Nama User ini</label>
                       <input type="text" class="form-control" name="name" value="{{ $item->name }}" required />
                     </div>
                   </div>
