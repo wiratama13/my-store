@@ -18,7 +18,7 @@
               <nav>
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="/index.html">Home</a>
+                    <a href="{{ route('home') }}">Home</a>
                   </li>
                   <li class="breadcrumb-item active">
                     Product Details
@@ -151,7 +151,7 @@
                       class="mr-3 rounded-circle"
                     />
                     <div class="media-body">
-                      <h5 class="mt-2 mb-1">Dakimu Wangi</h5>
+                      <h5 class="mt-2 mb-1">Agnes A</h5>
                       When I saw at first, it was really awesome to have with.
                       Just let me know if there is another upcoming product like
                       this.

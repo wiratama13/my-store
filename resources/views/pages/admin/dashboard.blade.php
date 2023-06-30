@@ -14,7 +14,7 @@
         <div class="dashboard-heading">
             <h2 class="dashboard-title">Admin Dashboard</h2>
             <p class="dashboard-subtitle">
-                This is BWAStore Administrator Panel
+                This is Store Administrator Panel
             </p>
         </div>
         <div class="dashboard-content">

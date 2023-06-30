@@ -49,6 +49,7 @@
 
 @push('addon-script')
     <script>
+       
         // AJAX DataTablenn
         var datatable = $('#crudTable').DataTable({
             processing: true,
@@ -57,6 +58,7 @@
             ajax: {
                 url: '{!! url()->current() !!}',
             },
+        
             columns: [
                 { data: 'id', name: 'id' },
                 { data: 'user.name', name: 'user.name' },

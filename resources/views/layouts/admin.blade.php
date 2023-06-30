@@ -95,7 +95,7 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Desktop Menu -->
-                <ul class="navbar-nav d-none d-lg-flex ml-auto">
+                <ul class="navbar-nav d-lg-flex ml-auto">
                   <li class="nav-item dropdown">
                     <a
                       href="#"
@@ -117,10 +117,10 @@
                   </li>
                 </ul>
 
-                <ul class="navbar-nav d-block d-lg-none">
+                <ul class="navbar-nav d-lg-none">
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      Hi, Angga
+                      Hi, {{ Auth::user()->name }}
                     </a>
                   </li>
                   <li class="nav-item">
