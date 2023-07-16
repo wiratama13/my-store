@@ -16,8 +16,9 @@
                 <p class="dashboard-subtitle">
                   Manage it well and get money
                 </p>
-              </div>
-              <div class="dashboard-content">
+            </div>
+           
+            <div class="dashboard-content">
                 <div class="row">
                   <div class="col-12">
                     <a
@@ -27,8 +28,9 @@
                     >
                   </div>
                 </div>
-                <div class="row mt-4">
 
+                <div class="row mt-4">
+             
                   @foreach ($products as $product)
                       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <a

@@ -8,25 +8,33 @@ use App\Category;
 use App\ProductGallery;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\Admin\ProductRequest;
 
 class DashboardProductController extends Controller
 {
+
     public function index()
     {
-        $products = Product::with(['galleries','category'])->get();
+        $products = Product::with(['galleries', 'category', 'user'])
+            ->where('users_id', Auth::user()->id)
+            ->get();
 
-        return view('pages.dashboard-products',[
-            'products' => $products
+
+        return view('pages.dashboard-products', [
+            'products' => $products,
+
         ]);
     }
 
+
+
     public function details(Request $request, $id)
     {
-        $product = Product::with(['galleries','user','category'])->findOrFail($id);
+        $product = Product::with(['galleries', 'user', 'category'])->findOrFail($id);
         $categories = Category::all();
 
-        return view('pages.dashboard-products-details',[
+        return view('pages.dashboard-products-details', [
             'product' => $product,
             'categories' => $categories
         ]);
@@ -56,7 +64,7 @@ class DashboardProductController extends Controller
         $users = User::all();
         $categories = Category::all();
 
-        return view('pages.dashboard-products-create',[
+        return view('pages.dashboard-products-create', [
             'users' => $users,
             'categories' => $categories
         ]);

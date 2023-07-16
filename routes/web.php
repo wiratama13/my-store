@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -68,7 +69,7 @@ Route::group(['middleware' => ['auth']], function () {
 
 Route::prefix('admin')
     ->namespace('Admin')
-    ->middleware(['auth'])
+    ->middleware(['auth','admin'])
     ->group(function() {
         Route::get('/', 'DashboardController@index')->name('admin-dashboard');
         Route::resource('category', 'CategoryController');

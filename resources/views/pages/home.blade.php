@@ -100,7 +100,7 @@
                         <h5>New Products</h5>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row d-flex justify-content-center">
                     @php $incrementProduct = 0 @endphp
                     @forelse ($products as $product)
                         <div
