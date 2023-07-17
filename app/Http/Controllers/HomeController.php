@@ -13,11 +13,15 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $request)
     {
         $categories = Category::take(6)->get();
-        $products = Product::with('galleries')->take(8)->get();
-
+        $keyword = $request->search;
+        $products = Product::where('name', 'LIKE' , '%'. $keyword . '%' )
+            ->orWhereHas('category', function($query) use($keyword){
+                $query->where('name', 'LIKE', '%'. $keyword .'%');
+            })
+            ->take(8)->get();
         return view('pages.home',[
             'categories' => $categories,
             'products' => $products

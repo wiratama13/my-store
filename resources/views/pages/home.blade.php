@@ -5,9 +5,21 @@
 @endsection
 
 @section('content')
+
+ 
     <div class="page-content page-home">
         <section class="store-carousel">
         <div class="container">
+               <div class="row justify-content-center mb-3">
+        <div class="col-md-8">
+            <form action="" method="get">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="cari produk" name="search">
+                    <button class="btn btn-success mx-2" type="submit">search</button>
+                </div>
+            </form>
+        </div>
+    </div>
             <div class="row">
             <div class="col-lg-12" data-aos="zoom-in">
                 <div
