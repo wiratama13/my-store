@@ -14,7 +14,7 @@
               <h5>All Categories</h5>
             </div>
           </div>
-          <div class="row">
+          <div class="row d-flex justify-content-between">
             @php $incrementCategory = 0 @endphp
             @forelse ($categories as $category)
                 <div
@@ -53,7 +53,7 @@
               <h5>All Products</h5>
             </div>
           </div>
-          <div class="row">
+          <div class="row d-flex justify-content-center">
             @php $incrementProduct = 0 @endphp
             @forelse ($products as $product)
                 <div
