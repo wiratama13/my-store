@@ -82,7 +82,7 @@
                       @csrf
                       <button
                         type="submit"
-                        class="btn btn-success px-4 text-white btn-block mb-3"
+                        class="btn btn-primary px-4 text-white btn-block mb-3"
                       >
                         Add to Cart
                       </button>
@@ -90,7 +90,7 @@
                 @else
                     <a
                       href="{{ route('login') }}"
-                      class="btn btn-success px-4 text-white btn-block mb-3"
+                      class="btn btn-primary px-4 text-white btn-block mb-3"
                     >
                       Sign in to Add
                     </a>

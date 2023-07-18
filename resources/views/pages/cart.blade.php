@@ -199,7 +199,7 @@
               <div class="col-8 col-md-3">
                 <button
                   type="submit"
-                  class="btn btn-success mt-4 px-4 btn-block"
+                  class="btn btn-primary mt-4 px-4 btn-block"
                 >
                   Checkout Now
                 </button>

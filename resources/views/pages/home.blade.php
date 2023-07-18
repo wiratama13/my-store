@@ -15,7 +15,7 @@
             <form action="" method="get">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="cari produk" name="search">
-                    <button class="btn btn-success mx-2" type="submit">search</button>
+                    <button class="btn btn-primary mx-2" type="submit">search</button>
                 </div>
             </form>
         </div>
