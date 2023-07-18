@@ -14,7 +14,7 @@
               <h5>All Categories</h5>
             </div>
           </div>
-          <div class="row d-flex justify-content-between">
+          <div class="row d-flex justify-content-center">
             @php $incrementCategory = 0 @endphp
             @forelse ($categories as $category)
                 <div
