@@ -148,6 +148,5 @@ class CategoryController extends Controller
         $item->delete();
 
         return redirect()->route('category.index');
-
     }
 }
