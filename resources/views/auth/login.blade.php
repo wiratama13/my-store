@@ -19,6 +19,15 @@
                     </h2>
                     <form method="POST" action="{{ route('login') }}" class="mt-3">
                         @csrf
+
+                   <div class="alert alert-success alert-dismissible fade show" role="alert">
+                  login dengan username: admin@mail.com, password: password. 
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+
+
                         <div class="form-group">
                             <label>Email Address</label>
                             <input id="email" type="email" class="form-control w-75 @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
